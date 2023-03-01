@@ -29,8 +29,8 @@ const personalMovieDB = {
 };
 
 for (let i = 0; i < 2; i++) {
-    const oneOfLastFilmSeen = prompt("What is the name of the last film you have seen?", "");
-    const mark = +prompt("What is the mark you give to this movie?", "");
+    const oneOfLastFilmSeen = prompt("What is the name of the latest film you have seen?", "");
+    const mark = +prompt("What is the mark you have given to this movie?", "");
     personalMovieDB.movies[oneOfLastFilmSeen] = mark;
 
 }
