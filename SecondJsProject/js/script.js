@@ -14,17 +14,26 @@
 
 'use strict';
 
-// const storeName = 'My awesome store';
+const numberOfFilms = +prompt("How many films have you already seen?", "0");
 
-// const storeDescription = {
-//     budget: 10000,
-//     employees: ['Alex', 'John', 'Sam'],
-//     products: {
-//         'soap': 20,
-//         'water': 5
-//     },
-//     open: true
-// };
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {
 
-console.log(2*4 === 8);
+    },
+    actors: {
+
+    },
+    genres: [],
+    privat: false
+};
+
+for (let i = 0; i < 2; i++) {
+    const oneOfLastFilmSeen = prompt("What is the name of the last film you have seen?", "");
+    const mark = +prompt("What is the mark you give to this movie?", "");
+    personalMovieDB.movies[oneOfLastFilmSeen] = mark;
+
+}
+
+console.log(personalMovieDB);
 
